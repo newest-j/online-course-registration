@@ -14,7 +14,7 @@
 
     <div><ArrowRightIcon class="text-primary size-4" /></div>
   </div>
-  <nav class="sticky py-3">
+  <nav class="sticky py-3 bg-primary">
     <div class="max-w-7xl m-auto lg:px-20 sm:px-6 px-4">
       <div class="flex justify-between gap-8">
         <!-- logo -->
@@ -26,7 +26,7 @@
         <div class="md:flex items-center w-full justify-between">
           <div class="hidden md:flex gap-4">
             <router-link
-              class="text-secondary hover:text-accent transition-colors duration-200"
+              class="text-text2 hover:text-accent transition-colors duration-200"
               :class="{ 'border-b-2 border-accent': $route.path === link.path }"
               v-for="link in navlink"
               :to="link.path"
@@ -38,11 +38,11 @@
 
           <div class="flex justify-end gap-4 items-center">
             <router-link
-              class="text-secondary hover:text-accent transition-colors duration-200"
+              class="text-text2 hover:text-accent transition-colors duration-200"
               :class="[
                 { 'border-b-2 border-accent': $route.path === link.path },
                 link.name === 'Login'
-                  ? 'bg-accent text-primary rounded-sm px-4 py-2  border-none'
+                  ? 'bg-accent hover:text-primary rounded-sm px-4 py-2  border-none'
                   : '',
               ]"
               v-for="link in navauth"
@@ -56,12 +56,12 @@
 
         <!-- bar button -->
         <button @click="isMenuOpen = !isMenuOpen" class="md:hidden">
-          <Bars3Icon v-if="!isMenuOpen" class="size-4 text-secondary" />
-          <XMarkIcon v-else class="size-4 text-secondary" />
+          <Bars3Icon v-if="!isMenuOpen" class="size-4 text-text1" />
+          <XMarkIcon v-else class="size-4 text-text1" />
         </button>
 
         <button @click="toggleDark" class="hidden md:block">
-          <SunIcon v-if="isDark" class="size-5 text-secondary" />
+          <SunIcon v-if="isDark" class="size-5 text-text1" />
           <MoonIcon v-else class="size-5" />
         </button>
       </div>
@@ -71,7 +71,7 @@
         <div class="flex flex-col gap-4 pt-3">
           <router-link
             @click="isMenuOpen = false"
-            class="text-secondary hover:text-accent transition-colors duration-200"
+            class="text-text1 hover:text-accent transition-colors duration-200"
             :class="{ 'border-l-2 border-accent pl-2 ': $route.path === link.path }"
             v-for="link in navlink"
             :to="link.path"
@@ -81,7 +81,7 @@
           >
 
           <button @click="toggleDark">
-            <SunIcon v-if="isDark" class="size-5 text-secondary" />
+            <SunIcon v-if="isDark" class="size-5 text-text1" />
             <MoonIcon v-else class="size-5" />
           </button>
         </div>

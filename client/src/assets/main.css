@@ -5,10 +5,16 @@
   --color-accent: #ff9500;
   --color-primary: #e4e4e7;
   --color-secondary: #1a1a1a;
+  --color-background: #b3b3b3;
+  --color-text1: #1a1a1a;
+  --color-text2: #59595a;
 }
 
 .dark {
   --color-primary: #1a1a1a;
   --color-secondary: #e4e4e7;
   --color-accent: #ffbf66;
+  --color-background: #262626;
+  --color-text1: #fcfcfd;
+  --color-text2: #f7f7f8;
 }
