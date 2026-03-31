@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-primary">
-    <div class="max-w-7xl m-auto lg:px-20 sm:px-6 pt-14 pb-6">
+    <div class="max-w-7xl m-auto lg:px-20 sm:px-6 pt-14 pb-6 px-4">
       <div class="grid grid-cols-1 md:grid-cols-5">
         <!-- logo and contact -->
         <div class="col-span-1 md:col-span-2">
