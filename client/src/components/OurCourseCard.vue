@@ -10,7 +10,7 @@
         <span class="font-bold">By {{ author }}</span>
       </div>
     </div>
-    <h1 class="text-text1 font-extrabold">{{ title }}</h1>
+    <h1 class="text-text1 font-extrabold text-lg">{{ title }}</h1>
     <p class="text-text2 my-3">{{ description }}</p>
     <button class="py-1 w-full text-center rounded-sm bg-background text-text1">Get it Now</button>
   </div>
