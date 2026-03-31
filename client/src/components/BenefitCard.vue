@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-primary p-6">
+  <div class="bg-primary p-6 rounded-md">
     <div class="flex justify-end font-extrabold text-text1">
       <h1 class="md:text-6xl text-4xl mb-3">{{ heading }}</h1>
     </div>
-    <h3 class="font-bold text-text1">{{ title }}</h3>
+    <h1 class="font-bold text-text1">{{ title }}</h1>
     <p class="text-text2">{{ description }}</p>
 
     <!-- arrowup shift -->
