@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary rounded-sm p-12">
+  <div class="bg-primary rounded-md p-12">
     <img class="rounded-sm w-sm h-auto" :src="videoimage" alt="" />
     <div class="flex items-center justify-between mb-4 mt-3">
       <div class="flex text-text2 gap-2">
