@@ -1,7 +1,7 @@
 <template>
   <div class="p-4 bg-primary rounded-md">
     <div class="flex justify-end font-extrabold text-text1">
-      <h1>{{ heading }}</h1>
+      <h1 class="md:text-6xl text-4xl">{{ heading }}</h1>
     </div>
     <p class="text-text1 font-bold my-6">{{ title }}</p>
     <div class="flex flex-col gap-3">
