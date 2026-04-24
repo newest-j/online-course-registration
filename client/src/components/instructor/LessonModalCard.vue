@@ -15,7 +15,7 @@
       <div class="absolute inset-0 bg-text1/50" @click="isOpen = false"></div>
 
       <!-- the model box -->
-      <div class="w-full max-w-md max-h-[90vh] bg-primary rounded-md overflow-y-auto p-5 z-2">
+      <div class="w-full max-w-xl max-h-[90vh] bg-primary rounded-md overflow-y-auto p-5 z-2">
         <div class="flex justify-end">
           <XMarkIcon class="size-4 text-text2" @click="isOpen = false" />
         </div>
@@ -63,7 +63,9 @@
           class="bg-gray-300 px-2 rounded-sm w-full focus:outline-none focus:ring-4 focus:ring-background my-2 placeholder-background"
         />
 
-        <div class="flex items-center justify-between w-full border border-background mb-4">
+        <div
+          class="flex items-center justify-between w-full border border-background mb-4 p-3 rounded-md"
+        >
           <div>
             <h1 class="text-text1 font-bold">Free Preview</h1>
             <p class="text-background">Allow non-enrolled students to watch this lesson</p>
@@ -72,9 +74,11 @@
           <div>
             <label class="inline-flex relative items-center cursor-pointer">
               <input type="checkbox" class="sr-only peer" />
-              <div class="w-11 h-6 rounded-full peer-checked:bg-text1 transition-colors"></div>
               <div
-                class="absolute rounded-full bg-primary transition-transform peer-checked:translate-x-5"
+                class="w-11 h-6 rounded-full bg-gray-300 peer-checked:bg-text1 transition-colors"
+              ></div>
+              <div
+                class="absolute size-5 ml-1 rounded-full bg-primary transition-transform peer-checked:translate-x-5"
               ></div>
             </label>
           </div>
