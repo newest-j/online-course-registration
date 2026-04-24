@@ -13,7 +13,7 @@
 
     <div v-if="isOpen" class="fixed flex items-center justify-center inset-0 p-2 z-1">
       <!-- overlay -->
-      <div class="absolute insert-0 bg-text1/50" @click="isOpen = false"></div>
+      <div class="absolute inset-0 bg-text1/50" @click="isOpen = false"></div>
 
       <!-- the model box -->
       <div class="bg-primary w-full max-w-md p-4 rounded-md z-2">
